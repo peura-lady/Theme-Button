@@ -1,11 +1,13 @@
 import React from 'react';
 import ThemeContext from './ThemeContext';
 
+
 function HeaderButton() {
-  const colorTeam = React.useContext(ThemeContext);
+  const themeContext = React.useContext(ThemeContext);
+
   return (
     <div>
-      <button value={colorTeam}>Press me</button>
+      <button style={themeContext.blue} >Press me</button>
     </div>
   );
 }
